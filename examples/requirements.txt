@@ -1,0 +1,8 @@
+tinvest-robot-perevalov==0.1.2
+pytz
+transformers
+scipy
+APScheduler
+sqlalchemy
+feedparser
+tensorflow
