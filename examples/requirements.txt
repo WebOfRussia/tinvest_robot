@@ -6,3 +6,4 @@ APScheduler
 sqlalchemy
 feedparser
 tensorflow
+tinkoff-investments
