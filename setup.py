@@ -20,7 +20,7 @@ def read_requirements():
 
 setuptools.setup(
     name="tinvest-robot-perevalov",
-    version="0.1.2",
+    version="0.1.3",
     author="Aleksandr Perevalov",
     author_email="perevalovproduction@gmail.com",
     description="A package that implements a news sentiment based strategy for trading using Tiknoff Invest API",

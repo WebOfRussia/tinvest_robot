@@ -20,3 +20,13 @@ services:
     command: python trade.py
     volumes:
       - ../data:/data
+  sqlite-web:
+    restart: unless-stopped
+    image: coleifer/sqlite-web
+    container_name: tinvest_perevalov_sqlite-web
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../data:/data
+    environment:
+      - SQLITE_DATABASE=$TINVEST_DB_NAME

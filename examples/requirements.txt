@@ -1,4 +1,4 @@
-tinvest-robot-perevalov==0.1.2
+tinvest-robot-perevalov
 pytz
 transformers
 scipy
