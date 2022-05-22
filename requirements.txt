@@ -4,4 +4,3 @@ scipy==1.4.1
 APScheduler==3.6.3
 feedparser==6.0.8
 tinkoff
-tinvest_robot_perevalov
