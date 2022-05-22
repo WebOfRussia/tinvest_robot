@@ -21,7 +21,7 @@ def _init_sentiment_analyzer() -> SentimentAnalyzer:
     Returns:
         SentimentAnalyzer: Initialized sentiment analyzer
     """
-    MODEL = os.environ['SENTIMENT_MODEL'] or "cardiffnlp/twitter-roberta-base-sentiment"
+    MODEL = os.getenv('SENTIMENT_MODEL') or "cardiffnlp/twitter-roberta-base-sentiment"
     THRESHOLD = 0.1
 
     logger.info("Downloading labels...")

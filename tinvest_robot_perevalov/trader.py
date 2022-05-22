@@ -212,6 +212,10 @@ def _handle_match(sentiment: str, share: object, account_id: str, news_id: int, 
     if sentiment == 'positive':
         balance = _get_balance(account_id)
         price = _get_best_price(share, schemas.OrderDirection.ORDER_DIRECTION_BUY)
+        
+        if price == 0.0: # no orders in order book
+            return response
+
         if balance*(1 + FEE) > price: # if we have enough money to buy
             response = _post_order(share.figi, 1, _float_to_quotation(price), schemas.OrderDirection.ORDER_DIRECTION_BUY, account_id, schemas.OrderType.ORDER_TYPE_MARKET, news_id)
 
@@ -219,6 +223,10 @@ def _handle_match(sentiment: str, share: object, account_id: str, news_id: int, 
         position = _get_position_from_account(share, account_id)
         if position: # if we have a position in our portfolio
             price = _get_best_price(share, schemas.OrderDirection.ORDER_DIRECTION_SELL)
+
+            if price == 0.0: # no orders in order book
+                return response
+
             response = _post_order(share.figi, quantity, _float_to_quotation(price), schemas.OrderDirection.ORDER_DIRECTION_SELL, account_id, schemas.OrderType.ORDER_TYPE_MARKET, news_id)
     
     return response
