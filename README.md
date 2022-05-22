@@ -1,6 +1,6 @@
 # Tinvest Robot Perevalov
 
-Tinvest Robot Perevalov - это Python Библиотека, реализующая функциональность торгового робота на основе [Tinkoff Invest API для Python](https://github.com/Tinkoff/invest-python) с торговой стратегией, [**основанной на анализе тональности новостей**](https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D1%82%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8_%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0).
+Tinvest Robot Perevalov - это [Python Библиотека](https://pypi.org/project/tinvest-robot-perevalov/), реализующая функциональность торгового робота на основе [Tinkoff Invest API для Python](https://github.com/Tinkoff/invest-python) с торговой стратегией, [**основанной на анализе тональности новостей**](https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D1%82%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B8_%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B0).
 
 ## Описание торговой стратегии
 
