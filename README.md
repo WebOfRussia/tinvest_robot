@@ -32,17 +32,19 @@ Tinvest Robot Perevalov - это Python Библиотека, реализующ
 
 Ниже представленые некоторые графики по результатам тестирования.
 
-![Доход по годам](data/resources/income-per-year.jpg)
+![Доход по годам](https://github.com/Perevalov/tinvest_robot/blob/master/data/resources/income-per-year.jpg)
 
 На графике мы видим, что доходность была положительной почти на всех годах, за исключением 2018. Также, очевидно что доходность не зависит от количества операций по бумагам (это было так же подтверждено анализом коррелляции).
 
-![Доход по тикерам](data/resources/income-per-ticker.jpg)
+![Доход по тикерам](https://github.com/Perevalov/tinvest_robot/blob/master/data/resources/income-per-ticker.jpg)
 
 На графике не уместились все тикеры, однако в топ-3 самых доходных компаний входят: TSLA (64.72%), NFLX (28.62%), AAPL (18.68%) в среднем за год. Также, очевидно, что большинство бумаг оказались с положительной доходностью.
 
+Тестирование можно воспроизвести с помощью данного [ноутбука](https://github.com/Perevalov/tinvest_robot/blob/master/examples/backtesting.ipynb) скачав перед этим [датасет](https://www.kaggle.com/datasets/gennadiyr/us-equities-news-data). Экспериментальные данные тестирования доступны [тут](https://github.com/Perevalov/tinvest_robot/tree/master/data/backtesting).
+
 ## Как запустить решение (How to run)
 
-Для запуска решения необходимо установить `Docker` и `Docker Compose` на вашей машине. После чего, необходимо перейти в директорию `examples` и запустить там следующие команды:
+Для запуска решения необходимо установить `Docker` и `Docker Compose` на вашей машине. После чего, необходимо перейти в директорию [`examples`](https://github.com/Perevalov/tinvest_robot/tree/master/examples) и запустить там следующие команды:
 
 ```bash
 docker-compose build
